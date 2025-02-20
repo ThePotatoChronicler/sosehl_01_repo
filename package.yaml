@@ -1,0 +1,26 @@
+name: sosehl-repo01
+
+dependencies:
+  - base >= 4.17 && < 5
+  - wai
+  - warp
+  - http-types
+  - wai-middleware-static
+
+ghc-options:
+  - -Wall
+  - -Widentities
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wmissing-export-lists
+  - -Wmissing-home-modules
+  - -Wpartial-fields
+  - -Wredundant-constraints
+
+
+executables:
+  host:
+    main: Main.hs
+    source-dirs: src
+    default-extensions:
+      - OverloadedStrings
